@@ -35,7 +35,7 @@
       "options": {
         "targetName": "test"
       },
-      "exclude": ["apps/eshop-api-e2e/**/*"]
+      "exclude": ["apps/eshop-api-e2e/**/*", "nest-api-e2e/**/*"]
     }
   ]
 }
