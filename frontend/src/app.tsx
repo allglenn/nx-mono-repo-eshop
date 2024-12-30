@@ -1,11 +1,19 @@
-import NxWelcome from './app/nx-welcome';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import ProductsPage from './pages/ProductsPage';
+import CartPage from './pages/CartPage';
 
-export function App() {
+const App: React.FC = () => {
+  const userId = 1; 
+
   return (
-    <div>
-      <NxWelcome title="frontend" />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<ProductsPage />} />
+        <Route path="/cart" element={<CartPage userId={userId} />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
