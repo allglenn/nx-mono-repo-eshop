@@ -89,7 +89,6 @@ This will generate an interactive graph of the project's dependencies. You can a
 nx graph --image
 ```
 
-Include the generated image in this section:
 
 ![Dependency Graph](/graph.png)
 
